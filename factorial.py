@@ -2,6 +2,7 @@
 #   Program to comput the factorial of a number
 #   Illustrates for loop with an accumulator
 
+
 def main():
 
     # Prompting user to input a number

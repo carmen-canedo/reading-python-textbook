@@ -3,9 +3,11 @@
 #   Illustrates use of the math library.
 #   Note: this program crashes if the equaiton has no real roots.
 
-import math # Makes the math library available
+import math  # Makes the math library available
 
 # Calling main function
+
+
 def main():
 
     # Printing the purpose of program
@@ -29,6 +31,7 @@ def main():
 
     # Printing solutions
     print("The solutions are: ", root1, "and", root2)
+
 
 if __name__ == '__main__':
     main()
