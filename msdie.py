@@ -21,7 +21,9 @@ class MSDie:
 
 def main():
 
-    die1 = MSDie(8)
+    die1 = MSDie(12)
+
+    die1.set_value(8)
 
     print(die1.get_value())
 
