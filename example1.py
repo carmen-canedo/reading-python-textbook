@@ -7,7 +7,7 @@
 #  - `update` method to change the state of the projectile
 #  - `get_x` and `get_y` methods to find current position
 
-from math import sin, cos, radians
+import math
 
 class Projectile:
 
