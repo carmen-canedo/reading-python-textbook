@@ -16,4 +16,14 @@ class MSDie:
         return self.value
 
     def set_value(self, value):
-        self.value = value 
+        self.value = value
+
+
+def main():
+
+    die1 = MSDie(8)
+
+    print(die1.get_value())
+
+if __name__ == '__main__':
+    main()
