@@ -55,7 +55,13 @@ def main():
         s = make_student(line)
         # If this student is best so far, remember it
         if s.gpa() > best.gpa():
-            best = s 
+            best = s
+        infile.close()
+
+    # Print information about the best student
+    print("The best student is: ", best.get_name())
+    print("Hours: ", best.get_hours())
+    print("GPA: ", best.get_gpa())
 
 
 if __name__ == '__main__':
