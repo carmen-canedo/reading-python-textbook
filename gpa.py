@@ -22,6 +22,10 @@ class Student:
     def get_qpoints(self):
         return self.qpoints
 
+    # Calculates the student's GPA
+    def get_gpa(self):
+        return self.qpoints / self.hours 
+
 # Calling main function
 def main():
 
