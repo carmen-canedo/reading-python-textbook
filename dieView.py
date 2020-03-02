@@ -21,9 +21,9 @@ class DieView:
 
         # Create a square for the face
         cx, cy = center.getX(), center.getY()
-        p1 = Point((cx - hsize), (cy - hsize))
-        p2 = Point((cx + hsize), (cy + hsize))
-        rect = Rectangle(p1, p2)
+        p1 = graphics.Point((cx - hsize), (cy - hsize))
+        p2 = graphics.Point((cx + hsize), (cy + hsize))
+        rect = graphics.Rectangle(p1, p2)
         rect.draw(win)
         rect.setFill(self.background)
 
@@ -41,7 +41,7 @@ class DieView:
 
     def __makePip(self, x, y):
         "Internal helper method to draw a pip at (x, y)"
-        pip = Circle(Point(x, y), self.psize)
+        pip = graphics.Circle(graphics.Point(x, y), self.psize)
         pip.setFill(self.background)
         pip.setOutline(self.background)
         pip.draw(self.win)
