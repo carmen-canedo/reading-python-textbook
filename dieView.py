@@ -26,3 +26,17 @@ class DieView:
         rect = Rectangle(p1, p2)
         rect.draw(win)
         rect.setFill(self.background)
+
+        # Create 7 circles for standard pip locations
+        self.pip1 = self.__makePip((cx - offset), (cy - offset))
+        self.pip2 = self.__makePip((cx - offset), cy)
+        self.pip3 = self.__makePip((cx - offset), (cy + offset)
+        self.pip4 = self.__makePip(cx, cy)
+        self.pip5 = self.__makePip((cx + offset), (cy - offset))
+        self.pip6 = self.__makePip((cx + offset), cy)
+        self.pip7 = self.__makePip((cx + offset), (cy + offset))
+
+        # Draw an initial value
+        self.setValue(1)
+
+        
