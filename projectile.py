@@ -16,14 +16,17 @@ class Projectile:
         and height."""
         self.xpos = 0.0
         self.ypos = height
-        theta = radians(angle)
-        self.xvel = velocity * cos(theta)
-        self.yvel = velocity * sin(theta)
+        theta = math.radians(angle)
+        self.xvel = velocity * math.cos(theta)
+        self.yvel = velocity * math.sin(theta)
 
     def update(self, time):
         """Update the state of this projectile to move it time seconds
         farther into its flight."""
         self.xpos = self.xpos + time * self.xvel
+        yvel1 = self.yvel - time * 9.8
+        self.ypos = self.ypos + time * (self.yvel + yvel1) / 2.0
+        self.yvel = yvel1
 
     def get_y(self):
         "Returns the y position (height) of this projectile."
