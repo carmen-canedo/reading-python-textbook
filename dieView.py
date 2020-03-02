@@ -73,7 +73,7 @@ class DieView:
             self.pip3.setFill(self.foreground)
             self.pip5.setFill(self.foreground)
             self.pip7.setFill(self.foreground)
-        elif (value = 5):
+        elif (value == 5):
             self.pip1.setFill(self.foreground)
             self.pip3.setFill(self.foreground)
             self.pip4.setFill(self.foreground)
